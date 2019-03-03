@@ -1,5 +1,13 @@
 # StockBot
 
+StockBot is a chatbot based on Rasa NLU aims to provide stock and weather information implemented by Python.
+
+
+
+## Demo Video
+<iframe width="100" height="315" src="Demo.mp4" frameborder="0" allowfullscreen></iframe>
+
+
 
 
 ## Environment
