@@ -15,7 +15,7 @@
 
 ```
 ├── StockBot                        
-│   ├── StockBot.ipunb         // chatbot
+│   ├── StockBot.ipynb         // chatbot
 │   ├── training_data.json     // training data for extracting intents and entities
 │   ├── config_spacy.yml       // config for trainer
 │   ├── city_code.db       	   // database(all provinces in China with their codes)
@@ -143,7 +143,7 @@ def get_citycode(city):
 
 
 
-In fact this database is not necessary. If you don't to do these database operations, you can find the API  providing each province and city’s code here: https://www.juhe.cn/docs/api/id/39.
+In fact this database is not necessary. If you don't want to do these database operations, you can try this API providing each province and city’s code: https://www.juhe.cn/docs/api/id/39.
 
 
 
