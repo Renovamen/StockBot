@@ -144,4 +144,24 @@ A QR code will be generated after creating a bot. Use your wechat account to sca
 
 
 
-Have fun. :)
+### Debug in terminal
+
+You can debug the code in terminal in following way instead of connect to wechat.
+
+```python
+while True:
+    state = MAIN
+    pending = None
+
+    msg = input()
+    print("USER: " + msg)
+
+    state, pending, final_response, message_intent = send_message(state, pending, msg)
+    print("BOT: " + final_response)
+```
+
+
+
+
+
+Have fun :)
