@@ -7,7 +7,7 @@
         },
         {
           "value": "TSLA",
-          "synonyms": ["Tesla","tesla","teslaa"]
+          "synonyms": ["Tesla","tesla","tsla"]
         },
         {
           "value": "AAPL",
@@ -16,6 +16,14 @@
         {
           "value": "AMZN",
           "synonyms": ["Amazon","amazon","amzn"]
+        },
+        {
+          "value": "GOOG",
+          "synonyms": ["Google","google","goog"]
+        },
+        {
+          "value": "MSFT",
+          "synonyms": ["Microsoft","microsoft","msft"]
         }
       ],
       "common_examples": [
@@ -57,25 +65,25 @@
           ]
         },
         {
-          "text": "I want to know the price of tesla",
+          "text": "I want to know the price of amazon",
           "intent": "current_price",
           "entities": [
             {
               "start":28,
               "end":33,
-              "value":"TSLA",
+              "value":"AMZN",
               "entity":"company"
             }
           ]
         },
         {
-          "text": "tell me the price of teslaa",
+          "text": "tell me the price of amazon",
           "intent": "current_price",
           "entities": [
             {
               "start":21,
               "end":27,
-              "value":"TSLA",
+              "value":"AMZN",
               "entity":"company"
             }
           ]
@@ -93,7 +101,7 @@
           ]
         },
         {
-          "text": "what about microsoft",
+          "text": "what about the price of microsoft",
           "intent": "current_price",
           "entities": [
             {
@@ -105,13 +113,13 @@
           ]
         },
         {
-          "text": "what about amazon",
+          "text": "what is the price of apple",
           "intent": "current_price",
           "entities": [
             {
               "start":11,
               "end":17,
-              "value":"AMZN",
+              "value":"AAPL",
               "entity":"company"
             }
           ]
@@ -148,7 +156,7 @@
                 "start":29,
                 "end":40,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             },
             {
                 "start":55,
@@ -178,7 +186,7 @@
                 "start":29,
                 "end":40,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             },
             {
                 "start":55,
@@ -208,7 +216,7 @@
                 "start":29,
                 "end":40,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             },
             {
                 "start":55,
@@ -238,7 +246,7 @@
                 "start":29,
                 "end":40,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             },
             {
                 "start":55,
@@ -268,7 +276,7 @@
                 "start":29,
                 "end":40,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             },
             {
                 "start":55,
@@ -310,7 +318,7 @@
                 "start":35,
                 "end":46,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             }
           ]
         },
@@ -328,7 +336,7 @@
                 "start":29,
                 "end":40,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             }
           ]
         },
@@ -346,7 +354,7 @@
                 "start":19,
                 "end":26,
                 "value":"high",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             }
           ]
         },
@@ -376,7 +384,7 @@
                 "start":23,
                 "end":27,
                 "value":"open",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             }
           ]
         },
@@ -388,7 +396,7 @@
                 "start":12,
                 "end":17,
                 "value":"close",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             },
             {
               "start":26,
@@ -406,7 +414,7 @@
                 "start":1,
                 "end":4,
                 "value":"open",
-                "entity":"hst_data_type"
+                "entity":"his_price_type"
             },
             {
               "start":15,
