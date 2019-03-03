@@ -53,6 +53,17 @@ Documentation: https://rasa.com/docs/nlu/
 
 
 
+Import:
+
+```python
+from rasa_nlu.training_data import load_data
+from rasa_nlu.config import RasaNLUModelConfig
+from rasa_nlu.model import Trainer
+from rasa_nlu import config
+```
+
+
+
 #### Train
 
 ```python
@@ -76,6 +87,20 @@ interpreter.parse("message")
 ### Iexfinance
 
 Documentation: https://addisonlynch.github.io/iexfinance/devel/
+
+
+
+Import:
+
+```python
+from iexfinance.stocks import Stock
+from iexfinance.stocks import get_historical_data
+from iexfinance.stocks import get_historical_intraday
+```
+
+
+
+Get data:
 
 ```
 Stock(company).get_price() # get current price of a certain stock
@@ -124,7 +149,7 @@ In fact this database is not necessary. If you don't to do these database operat
 
 ### Connect to Wechat
 
-This part base on the Python package: wxpy. Documentation: https://wxpy.readthedocs.io/zh/latest/bot.html.
+This part is based on the Python package: wxpy. Documentation: https://wxpy.readthedocs.io/zh/latest/bot.html.
 
 ```python
 from wxpy import *
@@ -146,7 +171,7 @@ A QR code will be generated after creating a bot. Use your wechat account to sca
 
 ### Debug in terminal
 
-You can debug the code in terminal in following way instead of connect to wechat.
+You can debug the code in terminal in following way instead of connect to wechat:
 
 ```python
 while True:
