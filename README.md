@@ -162,6 +162,8 @@ In fact this database is not necessary. If you don't want to do these database o
 
 ### Connect to Wechat
 
+#### wxpy
+
 This part is based on the Python package: wxpy. Documentation: https://wxpy.readthedocs.io/zh/latest/bot.html.
 
 ```python
@@ -179,6 +181,27 @@ bot.registered
 ```
 
 A QR code will be generated after creating a bot. Use your wechat account to scan this QR code and to login, then you can use your friend's wechat accout to chat with this chatbot.
+
+
+
+#### itchat
+
+Because the wxpy project have not updated for a long time, this project provide another way to connect to Wechat through a Python package called itchat. Documentation: https://itchat.readthedocs.io/zh/latest/
+
+```python
+import itchat
+from itchat.content import *
+
+itchat.auto_login()
+my_friend = itchat.search_friends(name="name_of_yourfriend")[0]['UserName']
+
+@itchat.msg_register([TEXT])
+def auto_reply(msg):
+    
+    # action...
+
+itchat.run()
+```
 
 
 
