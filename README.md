@@ -31,9 +31,9 @@ If the video is unable to load, you can download it: [Demo.mp4](Demo.mp4)
 │   ├── StockBot.ipynb         // chatbot
 │   ├── training_data.json     // training data for extracting intents and entities
 │   ├── config_spacy.yml       // config for trainer
-│   ├── city_code.db       	   // database(all provinces in China with their codes)
-│   ├── Report.pdf       	   // report of this project
-│   ├── Demo.mp4       	   	   // a demo showing an example dialogue
+│   ├── city_code.db           // database(all provinces in China with their codes)
+│   ├── Report.pdf             // report of this project
+│   ├── Demo.mp4               // a demo showing an example dialogue
 ```
 
 
