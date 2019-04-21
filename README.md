@@ -52,7 +52,7 @@ pip install matplotlib
 
 ## How to run
 
-Just download and run it in jupyter notebook.
+Just download the project and run it in jupyter notebook.
 
 
 
@@ -127,7 +127,7 @@ Stock(company).get_news() # get relevant news of a certain stock
 
 ### Weather API
 
-First you need to apply a key in: https://www.juhe.cn/docs/api/id/39 (Documentation can also be found here), and put it here:
+First you need to apply for a key in: https://www.juhe.cn/docs/api/id/39 (Documentation can also be found there), and put it here:
 
 ```python
 def get_weather(day_list, city):
@@ -138,7 +138,7 @@ def get_weather(day_list, city):
 
 
 
-This API need you to post a request with the code of city or province which you want to query about. In order to try some database operations, this project establish a database consist of all provinces with their codes in China (`city_code.db`). 
+This API needs you to post a request with the code of the city or province which you want to query about. In order to try some database operations, this project establish a database consisting of all provinces in China with their codes  (`city_code.db`). 
 
 ```python
 def get_citycode(city):
@@ -180,13 +180,13 @@ def auto_reply(msg):
 bot.registered
 ```
 
-A QR code will be generated after creating a bot. Use your wechat account to scan this QR code and to login, then you can use your friend's wechat accout to chat with this chatbot.
+A QR code will be generated after creating a bot. Use your wechat account to scan this QR code and login, then you can use your friend's wechat accout to chat with this chatbot.
 
 
 
 #### itchat
 
-Because the wxpy project have not updated for a long time, this project provide another way to connect to Wechat through a Python package called itchat. Documentation: https://itchat.readthedocs.io/zh/latest/
+Because the wxpy project has not been updated for a long time, this project provides another way to connect to Wechat through a Python package called itchat. Documentation: https://itchat.readthedocs.io/zh/latest/
 
 ```python
 import itchat
@@ -207,7 +207,7 @@ itchat.run()
 
 ### Debug in terminal
 
-You can debug the code in terminal in following way instead of connect to wechat:
+You can debug the codes in terminal in following way instead of connecting to wechat:
 
 ```python
 while True:
