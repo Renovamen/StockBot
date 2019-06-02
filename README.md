@@ -3,7 +3,7 @@
 StockBot is a chatbot based on Rasa NLU aims to provide stock and weather information implemented by Python.
 
 
-
+&nbsp;
 ## Demo Video
 
 [![Demo](img/cover.png)](https://www.youtube.com/watch?v=PnmfahdQ7PI)
@@ -14,30 +14,28 @@ If the video is unable to load, you can download it: [Demo.mp4](Demo.mp4)
 
 
 
-
+&nbsp;
 ## Environment
 
 - Python 3.6.7
-
 - Jupyter Notebook
-- macOS
 
 
-
+&nbsp;
 ## Structure
 
 ```
-├── StockBot                        
-│   ├── StockBot.ipynb         // chatbot
-│   ├── training_data.json     // training data for extracting intents and entities
-│   ├── config_spacy.yml       // config for trainer
-│   ├── city_code.db           // database(all provinces in China with their codes)
-│   ├── Report.pdf             // report of this project
-│   ├── Demo.mp4               // a demo showing an example dialogue
+└── StockBot                        
+    ├── StockBot.ipynb         // chatbot
+    ├── training_data.json     // training data for extracting intents and entities
+    ├── config_spacy.yml       // config for trainer
+    ├── city_code.db           // database(all provinces in China with their codes)
+    ├── Report.pdf             // report of this project
+    └── Demo.mp4               // a demo showing an example dialogue
 ```
 
 
-
+&nbsp;
 ## Requirements
 
 ```python
@@ -49,7 +47,7 @@ pip install matplotlib
 ```
 
 
-
+&nbsp;
 ## How to run
 
 Just download the project and run it in jupyter notebook.
@@ -57,7 +55,7 @@ Just download the project and run it in jupyter notebook.
 
 
 
-
+&nbsp;
 ## Usage
 
 ### Rasa NLU
@@ -96,7 +94,7 @@ interpreter.parse("message")
 
 
 
-
+&nbsp;
 ### Iexfinance
 
 Documentation: https://addisonlynch.github.io/iexfinance/devel/
@@ -124,7 +122,7 @@ Stock(company).get_news() # get relevant news of a certain stock
 
 
 
-
+&nbsp;
 ### Weather API
 
 First you need to apply for a key in: https://www.juhe.cn/docs/api/id/39 (Documentation can also be found there), and put it here:
@@ -159,7 +157,7 @@ def get_citycode(city):
 In fact this database is not necessary. If you don't want to do these database operations, you can try this API providing each province and city’s code: https://www.juhe.cn/docs/api/id/39.
 
 
-
+&nbsp;
 ### Connect to Wechat
 
 #### wxpy
@@ -180,13 +178,13 @@ def auto_reply(msg):
 bot.registered
 ```
 
-A QR code will be generated after creating a bot. Use your wechat account to scan this QR code and login, then you can use your friend's wechat accout to chat with this chatbot.
+A QR code will be generated after creating a bot. Use your WeChat account to scan this QR code and login, then you can use your friend's WeChat accout to chat with this chatbot.
 
 
 
 #### itchat
 
-Because the wxpy project has not been updated for a long time, this project provides another way to connect to Wechat through a Python package called itchat. Documentation: https://itchat.readthedocs.io/zh/latest/
+Because wxpy has not been updated for a long time, this project provides another way to connect to WeChat through a Python package called itchat. Documentation: https://itchat.readthedocs.io/zh/latest/
 
 ```python
 import itchat
@@ -204,10 +202,10 @@ itchat.run()
 ```
 
 
-
+&nbsp;
 ### Debug in terminal
 
-You can debug the codes in terminal in following way instead of connecting to wechat:
+You can debug the code in terminal in following way instead of connecting to WeChat:
 
 ```python
 while True:
